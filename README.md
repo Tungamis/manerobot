@@ -1,0 +1,2 @@
+# manerobot
+manero bot discord
