@@ -7,7 +7,6 @@ const http = require('http');
 const port = process.env.PORT || 3000;
 const token = process.env.BOT_TOKEN;
 http.creatServer().listen(port);
-const token = 'NjQwMjA0OTY4NTczNTM0MjE5.Xb9LSg.-cWr9IQmLt2gsszwqSeTomA1UZU';
 
 const PREFIX = 'manero ';
 
