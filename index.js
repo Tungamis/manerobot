@@ -2,7 +2,6 @@ const Discord = require('discord.js')
 const {Client, Attachment} = require('discord.js');
 const bot  = new Discord.Client();
 const client = require('discord.js');
-require('dotenv/config');
 const http = require('http');
 const port = process.env.PORT || 3000;
 const token = process.env.BOT_TOKEN;
