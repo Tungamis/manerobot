@@ -2,10 +2,12 @@ const Discord = require('discord.js')
 const {Client, Attachment} = require('discord.js');
 const bot  = new Discord.Client();
 const client = require('discord.js');
-
+require('dotenv/config');
+const http = require('http');
+const port = process.env.PORT || 3000;
+const token = process.env.BOT_TOKEN;
+http.creatServer().listen(port);
 const token = 'NjQwMjA0OTY4NTczNTM0MjE5.Xb9LSg.-cWr9IQmLt2gsszwqSeTomA1UZU';
-
-client.login(process.env.BOT_TOKEN)
 
 const PREFIX = 'manero ';
 
@@ -155,8 +157,11 @@ bot.on('message', msg=>{
             msg.react('😎');
             break;
     }
+        
+});
 
-    
-})
+bot.on('error', err => {
+    console.log(err);
+});
 
 bot.login(token);
